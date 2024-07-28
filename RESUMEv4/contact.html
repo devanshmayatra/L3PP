@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stylecont.css">
+    <title>CONTACT FORM</title>
+</head>
+<body>
+    <div id="BODY">
+        <h1 id="heading">CONTACT ME!</h1>
+        <table>
+            <tbody>
+                <tr>
+                    <td><label >FULL NAME :</label></td>
+                    <td><input type="text" placeholder="Enter your name"></td>
+                </tr>
+                <tr>
+                    <td><label>E-MAIL :</label></td>
+                    <td><input type="email" placeholder="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number :</label></td>
+                    <td><input type="number" placeholder="Enter your phone no."></td>
+                </tr>
+                <tr>
+                    <td><label>Date :</label></td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td><label><label>GENDER :</label></td>
+                    <td>
+                        <input name="gender" id="g1" type="radio">
+                        <label for="g1">MALE</label>
+                        <input name="gender" id="g2" type="radio">
+                        <label for="g2">FEMALE</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label><label>Preferred Contact Method :</label></label></td>
+                    <td>
+                        <select>
+                            <option value="Select option">Select Option</option>
+                            <option value="E-Mail">E-Mail</option>
+                            <option value="Whatsapp">Whatsapp</option>
+                            <option value="Others">Others</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label >ENTER METHOD:</label></td>
+                    <td><input type="text" placeholder="if others selected"></td>
+                </tr>
+                <tr><td>State the purpose of Contacting</td></tr>
+                <tr>
+                    <td><input id="c1" type="checkbox"><label for="c1">Comman Interests</label></td> 
+                </tr>
+                <tr>
+                    <td><input id="c2" type="checkbox"><label for="c2">As a friend!</label></td>
+                </tr>
+                <tr>
+                    <td><input id="c3" type="checkbox"><label for="c3">Work purposes</label></td>
+                </tr>
+                <tr>
+                    <td><input id="c4" type="checkbox"><label for="c4">Others</label></td>
+                </tr>
+                <tr>
+                    <td>
+                        <textarea cols="25" rows="5" placeholder="Other reason....."></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <button>SUBMIT</button>
+            <a href="index.html" id="contact-circle">
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 12 2 A 1 1 0 0 0 11.289062 2.296875 L 1.203125 11.097656 A 0.5 0.5 0 0 0 1 11.5 A 0.5 0.5 0 0 0 1.5 12 L 4 12 L 4 20 C 4 20.552 4.448 21 5 21 L 9 21 C 9.552 21 10 20.552 10 20 L 10 14 L 14 14 L 14 20 C 14 20.552 14.448 21 15 21 L 19 21 C 19.552 21 20 20.552 20 20 L 20 12 L 22.5 12 A 0.5 0.5 0 0 0 23 11.5 A 0.5 0.5 0 0 0 22.796875 11.097656 L 12.716797 2.3027344 A 1 1 0 0 0 12.710938 2.296875 A 1 1 0 0 0 12 2 z"/></svg>            </a>
+            <a href="pictures.html" id="gallery-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-5.0 -10.0 110.0 135.0">
+                <g>
+                 <path d="m64.688 32.469c0 4.9375-4 8.9375-8.9336 8.9375s-8.9375-4-8.9375-8.9375c0-4.9336 4.0039-8.9336 8.9375-8.9336s8.9336 4 8.9336 8.9336"/>
+                 <path d="m52.695 86.484h0.070313c4.0898-0.24609 8.1641-0.70312 12.211-1.3672h0.039063c9.7344-1.7188 18.367-10.352 20.09-20.09v-0.035156c1.1094-6.6719 1.6523-13.738 1.6641-21.594 0.011719-7.8555-0.55469-14.91-1.6641-21.586v-0.039062c-1.7188-9.7344-10.352-18.367-20.09-20.09h-0.035156c-6.6797-1.1289-13.746-1.6836-21.598-1.6836-7.8555 0-14.918 0.55469-21.586 1.6641h-0.039063c-9.7344 1.7266-18.367 10.359-20.09 20.094v0.035157c-1.1133 6.6758-1.6602 13.738-1.668 21.598s0.55469 14.918 1.6641 21.586v0.035157c1.7188 9.7344 10.352 18.371 20.09 20.09h0.035156c6.6758 1.1094 13.738 1.6523 21.594 1.6641 3.2031 0 6.332-0.09375 9.3125-0.28125zm-23.07-55.383c-2.6641 0-5.1992 1.457-6.9531 4-3.5625 5.1914-7.2422 10.422-10.812 15.484-1.2734 1.8047-2.5781 3.6641-3.8633 5.4922-0.375-4-0.56641-8.2031-0.57031-12.695 0.007813-7.4375 0.51953-14.098 1.5625-20.359 0.56641-3.2109 2.3398-6.4219 4.9727-9.0625 2.6328-2.6406 5.8594-4.4023 9.0703-4.9766 6.2578-1.0391 12.918-1.5508 20.344-1.5625 7.4297-0.011719 14.094 0.51953 20.359 1.5625 3.2188 0.57031 6.4453 2.3438 9.0781 4.9766 2.6289 2.6328 4.4062 5.8594 4.9766 9.0781 1.0391 6.2578 1.5469 12.914 1.5625 20.344h-0.003906c0.027344 5.918-0.35938 11.828-1.1523 17.691l-2.7031-3.7969c-1.7578-2.4727-3.4219-4.8086-3.9062-5.4844-1.7734-2.5117-4.3984-3.9414-7.1797-3.9414-2.7031 0-5.1367 1.375-6.6719 3.7734-0.37109 0.57812-0.74219 1.1523-1.1172 1.7266l-0.003907 0.003907c-0.91406 1.4766-2.5234 2.375-4.2617 2.3828-1.7422 0-3.3359-0.88672-4.3633-2.4297-3.6367-5.457-7.9023-11.902-11.938-18.398-1.5039-2.418-3.8477-3.8086-6.4258-3.8086z"/>
+                 <path d="m98.5 39.387c-1.0234-5.7891-4.4375-11.273-9.1992-15.148v0.003907c-0.10547-0.089844-0.26562 0-0.24609 0.13672 0.56641 4.1133 0.9375 8.3828 1.1094 12.891 0.003907 0.019531 0.007813 0.035157 0.015626 0.050781 0.46094 1.0742 0.79687 2.1992 1.0078 3.3516v0.015625c0.92578 5.5703 1.3789 11.477 1.3867 18.055 0.007812 6.5742-0.46094 12.5-1.3867 18.07-1.2109 6.8516-7.5234 13.164-14.359 14.371h-0.023437v-0.003906c-3.3555 0.55469-6.7344 0.9375-10.125 1.1406h-0.10938c-2.5 0.15625-5.1328 0.23438-7.8125 0.23828-6.5938 0-12.5-0.46094-18.078-1.3867-1.1523-0.20703-2.2773-0.54688-3.3516-1.0078l-0.054687-0.011718c-4.5078-0.17188-8.7773-0.53906-12.891-1.1094-0.13281-0.019531-0.22266 0.13672-0.13672 0.24219 0.58594 0.72656 1.2109 1.418 1.8711 2.0781 3.7383 3.7539 8.4531 6.293 13.281 7.1367l0.054687 0.007812c5.9766 0.99219 12.289 1.4805 19.301 1.4883 2.8242 0 5.5938-0.085938 8.2305-0.25h0.11328v0.003906c3.6641-0.22656 7.3164-0.63672 10.938-1.2344l0.066406-0.011719c4.8164-0.85156 9.5312-3.3789 13.281-7.125 3.75-3.7422 6.2734-8.4531 7.125-13.281l0.007813-0.058594c0.99219-5.9766 1.4805-12.289 1.4883-19.301 0.007813-7.0117-0.49219-13.305-1.4883-19.281z"/>
+                </g>
+               <text x="0.0" y="117.5" font-size="5.0" font-weight="bold" font-family="Arbeit Regular, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000"></text><text x="0.0" y="122.5" font-size="5.0" font-weight="bold" font-family="Arbeit Regular, Helvetica, Arial-Unicode, Arial, Sans-serif" fill="#000000"></text></svg>
+          </a>
+    </div>
+</body>
+</html>

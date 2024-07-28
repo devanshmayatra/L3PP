@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Payments Portal</title>
+</head>
+<body>
+
+  <div id="body">
+    <div id="Name">
+      WELCOME TO JANTA BANK
+    </div>
+    <div id="container">
+      <div id="UPI">
+        <h1>UPI</h1>
+        <button class="upi" onclick="showcash()">Show Balance</button>
+        <button class="upi" onclick="withdrawmoney()">Withdraw Money</button>
+        <button class="upi" onclick="addMoney()">Deposit Money</button>
+        <button class="upi" onclick="upi_transactions()">Show History</button>
+      </div>
+      <div id="CC">
+        <h1>Credit Card</h1>
+        <button class="cc" onclick="pendingMoney()">Show Pending Balance</button>
+        <button class="cc" onclick="paisabhar()">Pay Bill</button>
+        <button class="cc" onclick="shopping()">Buy</button>
+        <button class="cc" onclick="showLimit()">Check Limit</button>
+        <button class="cc" onclick="cc_transactions()">Show History</button>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

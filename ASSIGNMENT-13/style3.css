@@ -1,0 +1,140 @@
+
+
+#actions_2 input{
+  width: 95%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#actions_2 input::placeholder{
+  padding-left:10px ;
+}
+
+#actions_2 button{
+  margin-top: 10px;
+  width: 100%;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+
+#page_5{
+  display: none;
+  flex-direction: column;
+  width: 100%;
+}
+
+#container_5{
+  display: flex;
+  flex-direction: column-reverse;
+  margin-top: 75px;
+  width: 100%;
+}
+
+.data{
+  display: inline;
+  margin-left: 20px;
+  height: 50px;
+  font-size: 16px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 5px 0px #d4c8c8;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+  width: 87%;
+}
+
+.alert,.alert_1{
+  display: none;
+  color: rgb(225, 225, 225);
+  font-size: 14px;
+}
+
+.data:nth-child(odd){
+  background-color: #e5e5e5;
+}
+
+
+@media only screen and (min-width: 600px){
+
+  body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  #page_1{
+    display: flex;
+  }
+
+
+  #page_2 ,#transactions, #home_cont,#header{
+    display: none;
+    height: 1px;
+    width: 1px;
+  }
+
+  #box{
+    margin-top: 20px;
+    display: none;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 550px;
+    width: 800px;
+    border: 1px solid black;
+    border-radius:20px ;
+  }
+
+  #page_3{
+    display: flex;
+    width: 400px;
+  }
+
+  #page_4{
+    display: flex;
+    width: 400px;
+  }
+
+  #page_3 .nav_bar, #page_4 .nav_bar{
+    display: none;
+  }
+
+  #page_5{
+    border-radius:30px ;
+    display: flex;  
+    width: 400px;
+    height: 550px;
+    
+  }
+
+  #page_5 .nav_bar{
+    width: 390px;
+    border-radius: 20px;
+  }
+
+  #page_5 .header_1{
+    margin-top: 35px;
+  }
+
+  #container_3, #container_4,#container_5{
+    margin-top: 10px;
+  }
+
+  #container_5{
+    max-height:460px;
+    overflow-y:scroll;
+  }
+
+  .back{
+    display: none;
+  }
+
+  .header_1{
+    border-radius: 20px;
+    position: static;
+  }
+}

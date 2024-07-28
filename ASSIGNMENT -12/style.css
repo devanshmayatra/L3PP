@@ -1,0 +1,190 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header{
+  height: 40px;
+  background-color: #c97777;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-0{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.back{
+  width: 50px;
+  position: relative;
+  left: 80%;
+}
+
+#page_0{
+  display: flex;
+  flex-direction: column;
+}
+
+#selection{
+  display: flex;
+  height: 100px;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.button-1{
+  width: 45%;
+  height: 60px;
+  border: none;
+}
+
+#page_1{
+  display: none;
+  flex-direction: column;
+}
+
+#container{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+#button{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#button input {
+  width: 45%;
+}
+
+.button{
+  width: 45%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+p{
+  margin-bottom:10px ;
+}
+
+h3{
+  margin-top: 10px;
+}
+
+.history_name{
+  margin: 20px 0px;
+  text-align: center;
+}
+
+.data{
+  text-align: center;
+  height: 40px;
+  width: 98%;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  font-size: 15.5px;
+  line-height: 40px;
+  border: 1px solid black;
+}
+
+#upi_history_container ,#cc_history_container{
+  max-height: 225px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+#page_2{
+  display: none;
+  flex-direction: column;
+}
+
+#numbers{
+  display: flex;
+  justify-content: space-between;
+}
+
+#limit,#bill{
+  margin-top: 20px;
+}
+
+#bill_name{
+  margin-right: 21%;
+}
+
+#container-0{
+  margin: 20px;
+}
+
+#buttons{
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
+
+#buttons input {
+  width: 45%;
+}
+
+.button-0{
+  width: 45%;
+  height: 30px;
+  border-radius: 10px;
+  border: none;
+}
+
+@media only screen and (min-width: 600px){
+
+  #container-0{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .back{display: none;}
+
+  #page_0{
+    display: flex;
+    height: 100vh;
+    width: 20%;
+    background-color: beige;
+  }
+
+  #selection,#header{
+    display: none;
+  }
+
+  #page_1{
+    display: flex;
+    width: 40%;
+  }
+  
+  body{
+    display: flex;
+  }
+
+  #page_2{
+    display: flex;
+    width: 40%;
+  }
+
+  #bill_name{
+    margin-right: 33%;
+  }
+
+  #upi_history_container ,#cc_history_container{
+    max-height: 340px;
+  }
+
+}

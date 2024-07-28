@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <div id="page_0">
+    <div id="header">WELCOME TO JANTA BANK</div>
+    <div id="selection">
+      <button class="button-1" id="upi"> UPI TRANSACTION</button>
+      <button class="button-1" id="CC"> CREDIT CARD TRANSACTIONS</button>
+    </div>
+  </div>
+  <div id="page_1">
+    <div class="header-0">
+      <h2>UPI TRANSACTION</h2>
+      <button class="back">BACK</button>
+    </div>
+    <div id="container">
+      <p>Current Balance </p>
+      <h3 id="balance">0 Rs</h3>
+
+      <section id="button">
+        <button class="button" id="add">Add Money</button>
+        <input type="number" id="add_money" placeholder="Enter amount">
+        
+        <button class="button" id="withdraw">Withdraw Money</button>
+        <input type="number" id="withdraw_money" placeholder="Enter amount">
+        
+      </section>
+      <div id="upi_history">
+        <h3 class="history_name">UPI History</h3>
+        <div id="upi_history_container">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="page_2">
+    <div class="header-0">
+      <h2>CC TRANSACTION</h2>
+      <button class="back">BACK</button>
+    </div>
+    <div id="container-0">
+      <div id="numbers">
+        <div>
+          <p>Current Balance </p>
+          <h3 id="limit">100000 Rs</h3>
+        </div>
+
+        <div id="bill_name">
+          <p>Bill To pay </p>
+          <h3 id="bill">0 Rs</h3>
+        </div>
+      </div>
+
+      <section id="buttons">
+        <button class="button-0" id="pay">Pay Bill</button>
+        <input type="number" id="pay_bill" placeholder="Enter amount">
+        
+        <button class="button-0" id="buy">Buy</button>
+        <input type="number" id="buy_something" placeholder="Enter amount">
+        
+      </section>
+      <div id="cc_history">
+        <h3 class="history_name">Credit Card History</h3>
+        <div id="cc_history_container">
+
+        </div>
+      </div>
+  </div>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>

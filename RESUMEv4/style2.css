@@ -1,0 +1,212 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #c4fff9;
+  color: black;
+}
+
+#contact-circle:hover,#gallery-circle:hover{
+    background-color: #9ceaef;
+}
+
+a:hover{
+    color: grey;
+}
+
+nav{
+    width: 100%;
+    background-color: #9ceaef;
+    padding-top: 15px;
+    text-align: end;
+    position: fixed;
+    height: 4%;
+}
+
+:target{
+    background-color: aliceblue;
+}
+
+
+nav a, nav input{
+    margin-right: 30px;
+    color: black;
+    text-decoration: none;
+    font-size:18px;
+}
+
+#personal-details{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 0px;
+}
+
+#name{
+    margin: 50px;
+}
+
+#educational-background{
+    width: 20%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+
+#details{
+    margin-top: 60px;
+    /* margin-left: 750px */
+}
+
+#section-1{
+    display: flex;
+    background-color: #3dccc7;
+    margin-top: 100px;
+}
+
+#myself{
+    margin-left: 100px;
+}
+
+img{
+    height: 350px;
+    width:350px;
+    border-radius: 50%;
+}
+
+#section-2{
+    display: flex;
+    line-height: 18px;
+    background-color: #3dccc7;
+}
+
+#expertise{
+    margin-left: 100px;
+}
+
+#projects{
+    margin-left: 200px;
+}
+
+#prjcts,#prfile{
+    display: inline-block;
+}
+
+/* footer{
+    background-color: midnightblue;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}   */
+
+svg{
+  height: 45px;
+  width: 45px;
+}
+
+#contact-circle{
+    padding: 4px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #68d8d6;
+    position: absolute;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#gallery-circle{
+    padding: 4px;
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: #68d8d6;
+    position: absolute;
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    z-index: 10;
+}
+
+@media only screen and (max-width: 600px){
+
+    nav{
+        width: 100%;
+        text-align: center;
+        position: fixed;
+        height: 3%;
+    }
+
+    nav a{
+        margin: 0px 15px;
+    }
+
+    label, #search{
+        display: none;
+    }
+
+    #name{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+
+    img{
+        height: 150px;
+        width: 150px;
+    }
+
+    #personal-details{
+        font-size: 10px;
+    }
+
+   #name{
+        margin-left: 30px;
+        margin-right: 10px;
+    }
+
+    #details{
+        margin-top: 50px;
+        margin-left: 10px;
+        font-size: 8px;
+    }
+
+    
+    #section-1{
+        padding-left: 0px;
+        flex-direction: column-reverse;
+        margin-top: 10px;
+    }
+
+    #educational-background{
+        padding-left:30px;
+        width: 91%;
+        font-size: 15px;
+    }
+
+    #education{
+        display: flex;
+        font-size: 13px;
+    }
+
+    #myself{
+        margin-left: 30px;
+        font-size: 14.5px;
+    }
+
+    #expertise{
+        margin-left: 40px;
+    }
+
+    #projects{
+        margin-left: 0px;
+    }
+
+    footer{
+        height:103px;
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,194 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#body{
+  background-color: black;
+  height: 608px;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+#ansbox{
+  height: 35%;
+  width: 100%;
+  position: relative;
+}
+
+#ans{
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  right: 35px;
+  font-size: 60px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+#keybox{
+  height: 65%;
+  width: 100%;
+  display: flex;
+}
+
+#extras{
+  display: none;
+}
+
+#keybox1{
+  height: 100%;
+  width: 231px;
+}
+
+#keybox1a{
+  display: flex;
+}
+
+.key1{
+  background-color: #a5a5a5;
+  margin-left: 13px;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+}
+
+#keybox1b{
+  display: flex;
+  flex-direction: column;
+}
+
+#keybox1b1{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.key2{
+  height: 64px;
+  width: 64px;
+  background-color: #333333;
+  border-radius: 50%;
+  margin-left: 13px;
+  margin-bottom: 13px;
+}
+
+#keybox1b2{
+  display: flex;
+}
+
+.key3{
+  height: 64px;
+  width: 120px;
+  background-color: #333333;
+  margin-left: 13px;
+  border-radius: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 28px;
+  padding-left: 25px;
+}
+
+.key4{
+  height: 64px;
+  width: 64px;
+  background-color: #333333;
+  border-radius: 50%;
+  margin-left: 13px;
+
+}
+
+#keybox2{
+  height: 100%;
+  width: 89px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.key5{
+  background-color: #ff9f0a;
+  height: 64px;
+  width: 64px;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  
+}
+
+.key1,.key2,.key5,.key4{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 28px;
+}
+
+.key3,.key2,.key5,.key4{
+  color: rgb(218, 218, 218);
+}
+
+@media only screen and (min-width: 600px){
+  #body{
+    width: 100vw;
+    height: 100vh;
+  }
+
+  #keybox{
+    width: 100%;
+    height: 65%;
+  }
+
+  .key0{
+    height: 18%;
+    width: 15%;
+    border-radius: 45.5%;
+    background-color:#333333 ;
+  }
+
+  #keybox1{
+    width: 37.5%;
+  }
+
+  #extras{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 62.5%;
+    height: 100%;
+    color: antiquewhite;
+    background-color: aqua;
+  }
+
+
+  #keybox1a{
+    height: 20%;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .key1{
+    margin: 0px;
+    height: 89.999%;
+    width: 25%;
+    border-radius: 45.5%;
+  }
+
+  #keybox2{
+    width: 14.64%;
+    justify-content: space-evenly;
+  }
+
+  .key5{
+    margin: 0px;
+    height: 18%;
+    width: 64.04%;
+    border-radius: 45.5%;
+  }
+
+}

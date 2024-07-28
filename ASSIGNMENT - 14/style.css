@@ -1,0 +1,755 @@
+body{
+ margin: 0px;
+ padding: 0px;
+ height: 100vh;
+ width: 100%;
+ font-family: 'kanit';
+ background-color: black;
+ color: white;
+}
+
+#log{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img_{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+#center{
+    margin-top: 120px;
+    width: 75%;
+    font-size: 35px;
+    line-height: 40px;
+    height: 230px;
+}
+
+#create_acc{
+    height: 40px;
+    width: 100%;
+    font-size: 20px;
+    background:rgb(29, 155, 240);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#log_in_{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    margin-top: 160px;
+}
+
+#log_in{
+    color:rgb(29, 155, 240);
+    margin-left: 5px;
+}
+
+.img_,.img_ img{
+    height: 35px;
+}
+
+#create_account{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cancel{
+    position: absolute;
+    top: 0px;
+    left: 20px;
+    font-size: 28px;
+}
+
+#create{
+    height: 35px;
+    margin-top: 20px;
+    font-size: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inp{
+    margin-top: 100px;
+    height: 200px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.inp div{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    border: 2px solid rgb(29, 155, 240);
+    border-radius: 4px;
+}
+
+.inp div input{
+    height: 50%;
+    width: 85%;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.inp div input:focus{
+    outline: none;
+}
+
+.enter,.enter2{
+    height: 40px;
+    width: 50%;
+    line-height: 38px;
+    font-size: 20px;
+    background:rgb(29, 155, 240);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#login{
+    display: none;
+    flex-direction: column;
+}
+
+#login .inpi input{
+    height: 50%;
+    width: 85%;
+    background-color: black;
+    border: none;
+    color: white;
+}
+
+.inpi div{
+    border: 2px solid rgb(91, 91, 91);
+    width: 60%;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inpi div input:focus{
+    outline: none;
+}
+
+#area{
+    margin-top: 30px ;
+    margin-left: 20px;
+    font-size: 30px;
+}
+
+.cancel img{
+    margin-top: 15px;
+    height: 25px;
+    width: 25px;
+}
+
+#alert1{
+    height: 20px;
+    border: none;
+    display: none;
+    color: red;
+}
+
+#alert2{
+    display: none;
+    font-size: 16px;
+    border: none;
+    color: red;
+}
+
+#container{
+    height: 100%;
+    width: 100%;
+    display: none;
+    display: relative;
+}
+
+#header{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0px;
+    background-color: black;
+}
+
+#twitter_icon{
+    height: 28px;
+    width: 28px;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#settings_icon{
+    height: 23px;
+    width: 23px;
+    margin: 12.5px 10px;
+}
+
+#profile_pic{
+    height: 25px;
+    width: 25px;
+    background-color: azure;
+    border-radius: 50%;
+    margin: 10px 0px 10px 20px;
+    z-index: 9;
+}
+
+#sections{
+    height: 40px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top: 50px;
+    z-index: 5;
+    background-color: black;
+}
+
+#for_you,#following{
+    width: 50%;
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    position:relative;
+}
+
+#for_you div, #following div{
+    width: 85%;
+    height: 98%;
+    margin-bottom: 2%;
+    text-align:center ;
+    line-height: 40px;
+    max-width:50vw;
+    padding-bottom:5px;
+    
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
+
+
+#for_you_underline{
+    position:absolute;
+    background:rgb(29, 155, 240);
+    height:3px;
+    border-radius:10px;
+    display: block;
+    bottom: 0px;
+    width: 35%;
+    left: 7%;
+    display: none;
+}
+
+#following_underline{
+    position:absolute;
+    background:rgb(29, 155, 240);
+    height:3px;
+    border-radius:10px;
+    display: block;
+    bottom: 0px;
+    width: 35%;
+    left: 57%;
+    display: none;
+}
+
+#tweets_for_you, #tweets_following{
+    padding-top: 90px;
+    padding-bottom: 50px;
+    height: 100%;
+}
+
+#tweets_following{
+    display: none;
+    height: 500px;
+    width: 100%;
+}
+
+.tweet{
+    width: 100%;
+    padding-top: 5px;
+    display: flex;
+    border-bottom: 1px solid  rgb(59, 59, 59);
+}
+
+.icon{
+    height: 100%;
+    width: 21.875%;
+}
+
+.circle{
+    height: 45px;
+    width: 45px;
+    margin: 5px 5px 0px 20px;
+    border-radius: 50%;
+    background-color: azure;
+}
+
+.data{
+    width: 78.125%;
+    flex-basis: 100%;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.image{
+    width: 95%;
+    background-color: white;
+    flex-basis: 160px;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.title{
+    font-weight: 700;
+}
+
+.body{
+    color: rgb(231, 233, 234);
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.comments{
+    display: flex;
+    height: 30px;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+}  
+
+.comment{
+    width: 30px;
+    height: 16px;
+}
+
+.retweets{
+    margin-top: 3px;
+    width: 35px;
+    height: 16px;
+}
+
+.like{
+    margin-top: 3px;
+    width: 40px;
+    height: 22px;
+}
+
+.poll{
+    margin-top: 1px;
+    width: 40px;
+    height: 25px;
+}
+
+.share{
+    margin-top: 1px;
+    width: 40px;
+    height: 20px;
+}
+
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+#bottom_navigation{
+    height: 50px;
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid  rgb(59, 59, 59);
+}
+
+#side_bar{
+    height: 100%;
+    width: 280px;
+    background-color: black;
+    position: absolute;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    bottom: 0px;
+    top: 0px;   
+    /*animation: sidebar_rev 0.5s linear 0s 1 ;*/
+    /*animation: sidebar 0.5s linear 0s 1 ;*/
+}
+
+#bottom_navigation img{
+    height: 20px;
+    width: 20px;
+}
+
+
+
+#top_section{
+    width: 100%;
+}
+
+#inner_section{
+    width: 85%;
+    height: 150px;
+    margin: 0px 21px;
+    border-bottom: 1px solid  rgb(59, 59, 59);
+    position: relative;
+}
+
+#profile_pic_2{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin-top: 20px;
+}
+
+#i{
+    width: 18px;
+    height: 18px;
+    background-color: aliceblue;
+    position: absolute;
+    border-radius: 50%;
+    right: 0px;
+    margin-top: 12px;
+}
+
+#name{
+    margin-top: 15px;
+    margin-bottom:-5px ;
+    
+}
+
+#uname{
+    margin-top: 0px;
+    font-size: 13px;
+    color:  rgb(113 118 123);
+
+}
+
+#follow{
+    margin-top: 15px;
+    display: flex;
+    font-size: 13px;
+    justify-content: space-between;
+    width: 160px;
+}
+
+span{
+    color:  rgb(113 118 123);
+}
+
+#options{
+    color: white;
+    margin-left: 25px;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between ;
+    height: 250px;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid  rgb(59, 59, 59);
+
+}
+
+#options div:not(:hover){
+    opacity: 0.5;
+}
+
+#options div {
+    display: flex;
+}
+
+#options div img{
+    height: 24px;
+    margin-right: 20px;
+}
+
+#bottom_bar{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#mode{
+    height: 50px;
+    width: 91.075%;
+    position: absolute;
+    bottom: 0px;
+    padding-left:25px;
+    padding-top: 20px;
+    opacity: 0.5;
+}
+
+#mode img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 25px;
+    bottom: 20px;
+}
+
+#profile{
+    display: none;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    top: 40px;
+}
+
+#blue{
+    background:rgb(29, 155, 240);
+    height: 100px;
+    width: 100%;
+}
+
+#details{
+    padding-top: 40px;
+    padding-left: 25px;
+    border-bottom: 1px solid  rgb(59, 59, 59);
+    padding-bottom: 20px;
+}
+
+#born{
+    font-size: 14px;
+    color:  rgb(113 118 123);
+}
+
+#imaage{
+    background-color: aliceblue;
+    position:absolute;
+    height: 60px;
+    width: 60px;
+    border: 4px solid black;
+    border-radius: 50%;
+    top:65px;
+    left: 10px;
+}
+
+
+/* .dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
+
+.invert{
+    filter: invert(100%);
+} */
+
+@media only screen and (min-width: 600px){
+
+    #log{
+        width: 50%;
+        margin: auto;
+    }
+
+    #create_account{
+        width: 30%;
+        margin: auto;
+    }
+
+    #login{
+        width: 30%;
+        margin: auto;
+    }
+
+    #log_in_text{
+        margin-left: 50px;
+    }
+
+    #alert2{
+        margin-left: 75px;
+    }
+
+    .inpi div{
+        margin: 50px;
+    }
+
+    .enter2{margin-left:65px ; margin-top: 0px;}
+
+    #side_bar{
+        position: fixed;
+        display: flex;
+        flex-direction: column-reverse;
+        width: 18%;
+        left: 8%;
+        justify-content:flex-end;
+        border-right: 1px solid  rgb(59, 59, 59);
+    }
+
+    #header{
+        display: none;
+    }
+
+    #sections{
+        top: 0px;
+        left: 26%;
+        width: 40%;
+        height: 45px;
+        padding-top: 15px;
+    }
+
+    #container{
+        width: 80%;
+    }
+
+    #tweets_for_you, #tweets_following{
+        padding-top: 60px;
+        position: absolute;
+        width: 40%;
+        left:26%;
+        
+    }
+
+    #bottom_navigation{
+        display: none;
+    }
+
+    .image{
+        flex-basis: 300px;
+    }
+
+    #mode{
+        display: none;
+    }
+
+    #bottom_bar{
+        position: absolute ;
+        border: 2px solid  rgb(59, 59, 59);
+        border-radius: 8px ;
+        background-color: black;
+        padding: 10px;
+        width: 160px;
+        height: 28px;
+        bottom: 220px;
+        left: 60px;
+        display: none;
+    }
+
+    #options{
+        margin-top: 60px;
+        font-size: 28px;
+        height: 350px;
+    }
+
+    #options div img{
+        height: 35px;
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+
+    #top-section{
+        margin-top: 20px
+    }
+
+    #for_you_underline, 
+    #following_underline{
+        width: 80px;
+        margin-left: 32px;
+    }
+
+    #profile{
+        position: absolute;
+        width: 40%;
+        left:26%;
+    }
+
+    #profile{
+        padding-top: 0px;
+        width: 40%;
+        border-right: 1px solid  rgb(59, 59, 59);
+    }
+    
+    #blue{
+        background:rgb(29, 155, 240);
+        height: 200px;
+        width: 100%;
+    }
+    
+    #details{
+        padding-top: 60px;
+        padding-left: 25px;
+        border-bottom: 1px solid  rgb(59, 59, 59);
+        padding-bottom: 20px;
+    }
+
+    #profile_name{
+        font-size: 24px;
+    }
+
+    #profile_uname{
+        font-size: 21px;
+        color:  rgb(113 118 123);
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+    
+    #born{
+        font-size: 18px;
+        color:  rgb(113 118 123);
+    }
+    
+    #imaage{
+        background-color: aliceblue;
+        position:absolute;
+        height: 100px;
+        width: 100px;
+        border: 4px solid black;
+        border-radius: 50%;
+        top:145px;
+        left: 20px;
+    }
+}
+
+
+@keyframes sidebar{
+    0%{transform: translateX(-280px);}
+    12%{transform: translateX(-245px);}
+    25%{transform: translateX(-210px);}
+    50%{transform: translateX(-140px);}
+    75%{transform: translateX(-70px);}
+    100%{transform: translateX(0px);}
+}
+
+@keyframes sidebar_rev{
+    0%{transform: translateX(0px);}
+    12%{transform: translateX(-70px);}
+    25%{transform: translateX(-140px);}
+    50%{transform: translateX(-210px);}
+    75%{transform: translateX(-245px);}
+    100%{transform: translateX(-280px);}
+}

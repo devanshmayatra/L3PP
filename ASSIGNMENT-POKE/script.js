@@ -1,4 +1,6 @@
-let poke_data = fetch("https://pokeapi.co/api/v2/pokemon/?limit=721");
+let limit = 721;
+
+let poke_data = fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${721}`);
 let pics = document.querySelector("#pics");
 let pop_up = document.querySelector('#pop_up');
 let stat = document.querySelectorAll('.stat')
@@ -71,7 +73,8 @@ let pop_up_data = (data) => {
     div.innerHTML = element.ability.name.toUpperCase();
     ability.append(div)
   })
-
+  
+  document.querySelector('body').style.overflow = 'hidden';
 }
 
 
@@ -189,6 +192,7 @@ pop_up.addEventListener('click', () => {
   pop_up.style.display = "none";
   type_1.innerHTML = 'NONE';
   type_2.innerHTML = 'NONE';
+  document.querySelector('body').style.overflow = 'scroll';
   for (let i = 0; i < 6; i++) {
     stat[i].innerHTML = 0
   }
@@ -202,13 +206,11 @@ let next = document.querySelector('#next');
 
 next.addEventListener('click', () => {
   let id = document.querySelector('#index').innerHTML;
-
   let new_id = Number(id.match(/\d+/)[0]);
-
-  if(new_id == 721){
+  if(new_id == limit)
     new_id = 0
-  }
-  let url = fetch(`https://pokeapi.co/api/v2/pokemon/${new_id + 1}`)
+  new_id++;
+  let url = fetch(`https://pokeapi.co/api/v2/pokemon/${new_id}`)
   pop_up_show(url)
 })
 
@@ -218,16 +220,12 @@ let prev = document.querySelector('#prev');
 
 prev.addEventListener('click', () => {
   let id = document.querySelector('#index').innerHTML;
-
   let new_id = Number(id.match(/\d+/)[0]);
-
-  if(new_id == 1){
+  if(new_id == 1)
     alert('You are at the first pokemon')
-  }
   else{
-    let url = fetch(`https://pokeapi.co/api/v2/pokemon/${new_id - 1}`)
-  pop_up_show(url)
+    new_id--;
+    let url = fetch(`https://pokeapi.co/api/v2/pokemon/${new_id}`)
+    pop_up_show(url)
   }
-
-  
 })

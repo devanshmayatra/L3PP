@@ -5,8 +5,11 @@ body{
   width: 100%;
   display: flex;
   flex-direction: column;
+  align-items: center;
   font-family: 'kanit';
   scroll-behavior: smooth;
+  background: url(https://25.media.tumblr.com/2e8b4d4104934d2ea6eb3092cccdb49a/tumblr_mnecevVfxi1ssg3qho1_500.gif);
+  background-size:cover ;
 }
 
 header{
@@ -63,13 +66,13 @@ header{
 }
 
 #pics{
-  margin-top: 160px;
+  margin-top: 140px;
   display: flex;
-  height: 100%;
   width: 100%;
   flex-wrap: wrap;
   justify-content: start;
   margin-left: 1.7px;
+  background-color: white;
 }
 
 .boxes img{
@@ -109,21 +112,39 @@ header{
   display: flex;
   flex-direction: column;
   align-items: start;
-  border-radius: 10px;
   font-size: 13px;
+}
+
+#details{
+  height: 220px;
+  overflow-y: scroll;
+}
+
+#cover{
+  position: absolute;
+  right: 10px;
+  height: 32px;
+  width: 120px;
+  top: 80px;
+  background-color: #86d6bb;
 }
 
 .boxes:hover{
   transform: translateY(-10px);
 }
 
-#details{
-  height: 200px;
-  overflow-y: scroll;
+#nama{
+  margin-top: 265px;
 }
+
 
 #abilities{
   height: 100px;
+}
+
+#all{
+  display: flex;
+  flex-direction: column;
 }
 
 #pop_up{
@@ -147,21 +168,25 @@ header{
   position: relative;
   z-index: 100;
   padding-left: 16px;
+  background: url(https://pm1.aminoapps.com/7671/915fed778f4e89a6548c7759d04c7ca70517019dr1-768-448v2_uhq.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #container img{
   height: 230px;
   width: 265px;
-  background-color: aliceblue;
   margin-top: 40px;
   border-radius: 5px;
+  position: absolute;
+  left:0px;
 }
 
 #next ,#prev{
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
+  position: absolute;
   height: 48px;
   background-color: #424242;
   opacity: 60%;
@@ -170,21 +195,25 @@ header{
 
 #prev{
   left: 0px;
-  top: 280px;
+  top: 220px;
 }
 
 #next{
   right: 0px;
-  top: 280px;
+  top: 220px;
 }
 
 #index{
-  color: #424242;
-  font-size: 14px;
+  position: absolute;
+  top: 12px;
+  right: 50px;
+  font-size: 30px;
+  color: #232323;
 }
 
 #bio{
   display: flex;
+  flex-direction: column;
   width: 250px;
   justify-content: space-between;
 }
@@ -259,4 +288,26 @@ progress{
   border-radius: 50%;
   text-decoration: none;
   color: black;
+}
+
+@media only screen and (min-width: 600px){
+
+  #cover{
+    display: none;
+  }
+
+  #container{
+    background:none;
+    background-color: #d9d9d9;
+  }
+
+  #pics{
+    width: 47%;
+  }
+
+  .boxes{
+    height: 200px;
+    width: 150px;
+  }
+
 }

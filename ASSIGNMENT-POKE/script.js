@@ -1,6 +1,6 @@
-let limit = 721;
+let limit = 400;
 
-let poke_data = fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${721}`);
+let poke_data = fetch(`https://pokeapi.co/api/v2/pokemon/?limit=${limit}`);
 let pics = document.querySelector("#pics");
 let pop_up = document.querySelector('#pop_up');
 let stat = document.querySelectorAll('.stat')
@@ -46,7 +46,7 @@ let pop_up_data = (data) => {
   index.innerHTML = `#` + data.id;
 
   //to show the picture/sprite
-  pic.src = data.sprites.front_default;
+  pic.src = data.sprites.other.showdown.front_default;
 
   //to show type
   let base_type = data.types
@@ -83,7 +83,7 @@ async function new_poke(pokemon_1) {
   try {
     let new_result = await pokemon_1;
     let new_pokes = await new_result.json();
-    pic1 = new_pokes.sprites.front_default;
+    pic1 = new_pokes.sprites.other.showdown.front_default;
     let image = document.createElement('img');
     let data = document.createElement('div');
     let name = document.createElement('div');

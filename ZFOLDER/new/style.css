@@ -1,0 +1,53 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  height: 100svh;
+  width: 100%;
+  font-family: 'kanit';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#input{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border: 1px solid black;
+  height: 60px;
+  width: 250px;
+  margin: 20px;
+}
+
+input{
+  height: 50px;
+  width: 200px;
+  border: none;
+}
+
+input:focus{
+  outline: none;
+}
+
+.placeholder{
+  position: absolute;
+  left: 5px;
+  background-color: white;
+  padding: 0px 5px;
+  transition: 0.3s linear;
+  pointer-events: none;
+}
+
+input::placeholder{
+  color: white;
+}
+
+input:focus + .placeholder{
+  transform: translateY(-30px);
+  color: aquamarine;
+}
+
+input:focus::placeholder{
+  color: rgb(87, 87, 87);
+}

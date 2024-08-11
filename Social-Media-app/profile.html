@@ -14,52 +14,65 @@
     <title>PROFILE</title>
   </head>
   <body>
-    <header>
-      <div id="uname">user_name</div>
-      <div id="options">
-        <img src="./images/options.png" alt="" />
-      </div>
-    </header>
-    <section id="u_profile">
-      <div id="details1">
-        <div id="profile_pic"></div>
-        <div id="posts"><span>100</span>POSTS</div>
-        <div id="followers"><span>100</span>FOLLOWERS</div>
-        <div id="following"><span>100</span>FOLLOWING</div>
-      </div>
-      <div id="details2">
-        <div id="name">Devansh Mayatra</div>
-        <div id="profession">Web Developer</div>
-      </div>
-      <div id="details3">
-        <div id="bio">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis ipsum sit face
+    <div id="profileBody">
+      <header>
+        <div id="uname">user_name</div>
+        <div id="options">
+          <img src="./images/options.png" alt="" />
         </div>
-        <div id="edit_profile">
-          Edit Profile
+      </header>
+      <section id="u_profile">
+        <div id="details1">
+          <div id="profile_pic"></div>
+          <div id="posts"><span>100</span>POSTS</div>
+          <div id="followers"><span>100</span>FOLLOWERS</div>
+          <div id="following"><span>100</span>FOLLOWING</div>
         </div>
-      </div>
-    </section>
-    <section id="my_posts">
-      <div class="post"></div>
-      <div class="post"></div>
-    </section>
-    <nav>
-      <div class="icon">
-        <a href="./home.html"><img src="./images/home.png" alt="" /></a>
-      </div>
-      <div class="icon">
-        <a href=""><img src="./images/search.png" alt="" /></a>
-      </div>
-      <div class="icon">
-        <a href=""><img src="./images/add.png" alt="" /></a>
-      </div>
-      <div class="icon">
-        <a href=""><img src="./images/mail.png" alt="" /></a>
-      </div>
-      <div class="icon">
-        <a href="profile.html"><img src="./images/profile.png" alt="" /></a>
-      </div>
-    </nav>
+        <div id="details2">
+          <div id="name">Devansh Mayatra</div>
+          <div id="profession">Web Developer</div>
+        </div>
+        <div id="details3">
+          <div id="bio">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste facilis
+            ipsum sit face
+          </div>
+          <div id="edit_profile">Edit Profile</div>
+        </div>
+      </section>
+      <section id="my_posts">
+        <div class="post"></div>
+        <div class="post"></div>
+      </section>
+      <nav id="bottomNav">
+        <div class="icon">
+          <a href="./home.html"><img src="./images/home.png" alt="" /></a>
+        </div>
+        <div class="icon">
+          <a href=""><img src="./images/search.png" alt="" /></a>
+        </div>
+        <div class="icon">
+          <a href="./post.html"><img src="./images/add.png" alt="" /></a>
+        </div>
+        <div class="icon">
+          <a href=""><img src="./images/mail.png" alt="" /></a>
+        </div>
+        <div class="icon">
+          <img src="./images/profile.png" alt="" />
+        </div>
+      </nav>
+      <nav id="sideNav">
+        <div class="det">
+          <div>SETTINGS</div>
+          <div>HELP</div>
+          <div>ADD ACCOUNT</div>
+        </div>
+        <div class="det">
+          <a href="./start.html">LOGOUT</a>
+        </div>
+      </nav>
+    </div>
+    <div id="exit"></div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+body {
   height: 100svh;
   width: 100%;
   margin: 0px;
@@ -8,30 +8,36 @@ body{
   color: white;
 }
 
-#app_name, #uname{
+#app_name,
+#uname {
   color: rgb(110 196 250);
 }
 
-#bell , #options{
+#bell,
+#options,
+#back {
   margin-top: 4px;
-  height: 20px;
-  width: 20px;
+  height: 30px;
+  width: 30px;
 }
 
-#bell img, #options img{
+#bell img,
+#options img,
+#back img {
   filter: invert(100%);
-  height: 100%;
-  width: 100%;
+  height: 70%;
+  width: 70%;
+  z-index: 10;
 }
 
-header{
-  height: 8vh;
+header {
+  height: 4vh;
   display: flex;
   justify-content: space-between;
   margin: 10px 16px;
 }
 
-#story{
+#story {
   height: 16vh;
   width: 92%;
   margin: auto;
@@ -39,22 +45,22 @@ header{
   border-radius: 16px;
 }
 
-#content{
+#content {
   height: auto;
 }
 
-.post{
+.post {
   height: 200px;
   width: 92%;
   border-radius: 16px;
-  background-color:rgb(32 36 39) ;
+  background-color: rgb(32 36 39);
   margin: 10px auto;
 }
 
-nav{
+#bottomNav {
   width: 87%;
   height: 12vh;
-  background-color: rgb(32 36 39) ;
+  background-color: rgb(32 36 39);
   position: fixed;
   bottom: 20px;
   border-radius: 16px;
@@ -62,32 +68,36 @@ nav{
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px -12px 20px 4px rgba(0, 0, 0, 0.2), 0px 12px 20px 8px rgba(0, 0, 0, 0.2), -20px 20px 20px 20px rgb(0 0 0 / 50%), 20px 20px 20px 20px rgb(0 0 0 / 50%); 
+  box-shadow: 0px -12px 20px 4px rgba(0, 0, 0, 0.2),
+    0px 12px 20px 8px rgba(0, 0, 0, 0.2), -20px 20px 20px 20px rgb(0 0 0 / 50%),
+    20px 20px 20px 20px rgb(0 0 0 / 50%);
 }
 
-.icon{
+.icon {
   height: 25px;
   width: 25px;
 }
 
-nav img{
+#bottomNav img {
   height: 100%;
   width: 100%;
 }
 
-nav :nth-child(3){
+#bottomNav :nth-child(3) {
   width: 35px;
 }
 
-nav :nth-child(3) img{
-  border-radius: 10px 5px; 
+#bottomNav :nth-child(3) img {
+  border-radius: 10px 5px;
 }
 
-nav :nth-child(2) img, nav :nth-child(4) img,  nav :nth-child(5) img{
+#bottomNav :nth-child(2) img,
+#bottomNav :nth-child(4) img,
+#bottomNav :nth-child(5) img {
   filter: invert(100%);
 }
 
-#u_profile{
+#u_profile {
   width: 92%;
   height: 32vh;
   border-radius: 16px;
@@ -97,14 +107,14 @@ nav :nth-child(2) img, nav :nth-child(4) img,  nav :nth-child(5) img{
   flex-direction: column;
 }
 
-#profile_pic{
+#profile_pic {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: azure;
 }
 
-#details1{
+#details1 {
   display: flex;
   font-size: 8px;
   justify-content: space-evenly;
@@ -113,7 +123,9 @@ nav :nth-child(2) img, nav :nth-child(4) img,  nav :nth-child(5) img{
   height: 35%;
 }
 
-#details1 :nth-child(2), #details1 :nth-child(3), #details1 :nth-child(4){
+#details1 :nth-child(2),
+#details1 :nth-child(3),
+#details1 :nth-child(4) {
   height: 40px;
   width: 60px;
   background-color: #2a2e31;
@@ -124,27 +136,27 @@ nav :nth-child(2) img, nav :nth-child(4) img,  nav :nth-child(5) img{
   align-items: center;
 }
 
-#details2{
+#details2 {
   height: 16%;
   padding-left: 14px;
 }
 
-#name{
+#name {
   font-size: 0.75rem;
 }
 
-#profession{
+#profession {
   font-size: 0.65rem;
   color: rgb(116, 116, 116);
 }
 
-#bio{
+#bio {
   font-size: 0.7rem;
   margin-left: 14px;
   margin-top: 8px;
 }
 
-#edit_profile{
+#edit_profile {
   width: 92%;
   height: 40px;
   display: flex;
@@ -153,4 +165,239 @@ nav :nth-child(2) img, nav :nth-child(4) img,  nav :nth-child(5) img{
   background-color: #2a2e31;
   border-radius: 12px;
   margin: 0px auto;
+}
+
+#body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  z-index: 5;
+}
+
+#getStarted {
+  bottom: 0px;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  z-index: 10;
+  box-shadow: 0px -60px 100px 10px rgb(48 48 48);
+}
+
+#sName {
+  font-size: 28px;
+}
+
+#desc {
+  font-size: 12px;
+  margin-top: 2px;
+  color: rgb(116, 116, 116);
+}
+
+#getStartedButton {
+  height: 32px;
+  width: 180px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2563eb;
+  color: white;
+}
+
+#profileBody {
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+#sideNav {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 280px;
+  height: 100%;
+  background-color: rgb(15 17 18);
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#exit {
+  height: 100vh;
+  position: absolute;
+  width: 40px;
+  left: 0px;
+  top: 0px;
+}
+
+#sideNav .det {
+  margin: 30px 20px;
+}
+
+#sideNav .det div {
+  margin: 0px 0px 20px 0px;
+}
+
+/*
+post page
+*/
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+#postHead {
+  display: flex;
+  justify-content: left;
+  font-size: 18px;
+}
+
+#postDetails {
+  height: 12vh;
+  width: 92%;
+  background-color: rgb(32 36 39);
+  border-radius: 8px;
+  margin: 10px auto;
+}
+
+#img {
+  height: 30vh;
+  width: 92%;
+  background-color: rgb(32 36 39);
+  margin: 0px auto;
+  border-radius: 8px;
+}
+
+
+#postDesc {
+  height: 40vh;
+  width: 92%;
+  background-color: rgb(32 36 39);
+  margin: 0px auto;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+/*
+sign up page
+*/
+
+#back{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  height: 20px;
+  width: 24px;
+}
+
+#signupBody{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#point1{
+  font-size: 28px;
+  text-align: center;
+}
+
+#point2{
+  margin: 40px;
+}
+
+#inputPass{
+  display: flex;
+}
+
+td{
+  padding: 10px 5px;
+}
+
+.inp{
+  border-bottom: 1px solid rgb(78, 78, 78);
+  position: relative;
+}
+
+.inp input{
+  border: none;
+  background-color: rgb(15 17 18);
+  padding-left: 10px;
+  width: 150px;
+  color: white;
+}
+
+.placeholder{
+  position: absolute;
+  bottom: 2px;
+  left: 10px;
+  color: #585858;
+  font-size: 14px;
+  transition: 0.3s linear;
+}
+
+.inp input:focus{
+  outline: none;
+}
+
+#showPassword{
+  height: 20px;
+  width: 20px;
+  background-color: rgb(15 17 18);
+  margin-bottom: 4px;
+  padding: 0px;
+  border: none;
+}
+
+#showPassword img{
+  filter: invert(100%);
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes sidebar {
+  100% {
+    transform: translateX(40px);
+  }
+  75% {
+    transform: translateX(110px);
+  }
+  50% {
+    transform: translateX(180px);
+  }
+  25% {
+    transform: translateX(250px);
+  }
+  12% {
+    transform: translateX(285px);
+  }
+  0% {
+    transform: translateX(320px);
+  }
+}
+
+@keyframes sidebar_rev {
+  0% {
+    transform: translateX(40px);
+  }
+  12% {
+    transform: translateX(110px);
+  }
+  25% {
+    transform: translateX(180px);
+  }
+  50% {
+    transform: translateX(250px);
+  }
+  75% {
+    transform: translateX(285px);
+  }
+  100% {
+    transform: translateX(320px);
+  }
 }

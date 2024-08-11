@@ -32,26 +32,3 @@ container.addEventListener('click',()=>{
     },450)
   }
 })
-
-/* 
-for image input
-*/
-
-/*
-show password
-*/
-
-let show = document.querySelector('#showPassword');
-
-show.addEventListener('click',()=>{
-  let password = document.querySelector('#password');
-  console.log(password.type)
-  if(password.type === 'password'){
-    password.type = 'text';
-    console.log('password')
-  }
-  else{
-    password.type = 'password';
-    console.log('text')
-  }
-})

@@ -9,20 +9,17 @@
       href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="home.css" />
+    <link rel="stylesheet" href="./home.css" />
     <title>SIGN UP</title>
   </head>
   <body>
     <div id="sback">
-      <a href="start.html"><img src="./images/leftarrow.png" alt="" /></a>
+      <a href="sign_up.html"><img src="./leftarrow.png" alt="" /></a>
     </div>
-    <div id="signupBody">
-      <section id="point1">
-        CREATE AN <br />
-        ACCOUNT
-      </section>
-      <section id="point2">
-        <form action="">
+    <section id="page">
+      <section id="lower">
+        <div id="text">LOGIN</div>
+        <div id="form">
           <table>
             <tbody>
               <tr>
@@ -35,31 +32,21 @@
                 </td>
               </tr>
               <tr>
-                <td><label for="email">Email</label></td>
-                <td>
-                  <div class="inp">
-                    <input id="email" type="email" />
-                    <div class="placeholder">Email</div>
-                  </div>
-                </td>
-              </tr>
-              <tr>
                 <td><label for="password">Password</label></td>
                 <td>
                   <div id="inputPass" class="inp">
                     <input id="password" type="password" />
                     <div class="placeholder"> Password </div>
-                    <div id="showPassword"><img id="show" src="./images/eye.png" alt=""></div>
+                    <div id="showPassword"><img id="show" src="./eye.png" alt=""></div>
                   </div>
                 </td>
               </tr>
             </tbody>
           </table>
-        </form>
+        </div>
+        <a href="home.html"><div id="goIn">LOG IN</div></a>
       </section>
-      <section id="point3">Already have an account ?<a href="log_in.html"> Log In</a></section>
-      <a href="home.html"><div id="point4">Register</div></a>
-    </div>
-    <script type="module" src="sign_up.js"></script>r
+    </section>
+    <script type="module" src="./sign_up.js"></script>
   </body>
 </html>

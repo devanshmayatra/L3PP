@@ -10,21 +10,21 @@ http.createServer(function (req, res) {
 
   if (url === '/posts') {
     res.write(JSON.stringify(JSON.parse(api)))
-  } 
+  }
   else if (url.startsWith('/posts/')) {
 
     let urlPaths = url.split('/');
     let id = urlPaths[urlPaths.length - 1];
 
-    let iD = parseInt(id);
+    let iD = id;
     let post = [];
 
     for (value of posts) {
-      if(value.post_id === iD){
+      if (value.post_id == iD || value.author.toLowerCase() == iD.toLowerCase()) {
         post.push(value)
       }
     }
-    
+
     res.write(JSON.stringify(post))
   }
 

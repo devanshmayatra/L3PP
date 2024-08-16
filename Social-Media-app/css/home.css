@@ -8,6 +8,10 @@ body {
   color: white;
 }
 
+#box{
+  padding-bottom: 200px;
+}
+
 #app_name,
 #uname {
   color: rgb(110 196 250);
@@ -230,6 +234,7 @@ Profile Page
   display: none;
   flex-direction: column;
   justify-content: space-between;
+  z-index: 100;
 }
 
 #exit {
@@ -556,7 +561,7 @@ feed page
   #bottomNav {
     width: 340px;
     bottom: 0px;
-    left: 50%;
+    left: 49%;
     transform: translate(-50%, -50%);
   }
 

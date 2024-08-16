@@ -58,13 +58,14 @@ header {
 }
 
 #bottomNav {
-  width: 87%;
+  width: 85%;
   height: 12vh;
   background-color: rgb(32 36 39);
   position: fixed;
   bottom: 20px;
   border-radius: 16px;
-  left: 7.5%;
+  left: 50%;
+  transform: translate(-50%,-10%);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -531,7 +532,7 @@ feed page
 }
 
 .misc{
-  width: 32%;
+  width: 31.9%;
   height: 115px;
   background-color: #a3a3a3;
   opacity: 10%;

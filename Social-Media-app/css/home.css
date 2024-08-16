@@ -71,6 +71,7 @@ header {
   box-shadow: 0px -12px 20px 4px rgba(0, 0, 0, 0.2),
     0px 12px 20px 8px rgba(0, 0, 0, 0.2), -20px 20px 20px 20px rgb(0 0 0 / 50%),
     20px 20px 20px 20px rgb(0 0 0 / 50%);
+  z-index: 100;
 }
 
 .icon {
@@ -83,7 +84,7 @@ header {
   width: 100%;
 }
 
-#bottomNav :nth-child(3) {
+#jjj{
   width: 35px;
 }
 
@@ -96,6 +97,10 @@ header {
 #bottomNav :nth-child(5) img {
   filter: invert(100%);
 }
+
+/*
+Profile Page
+*/
 
 #u_profile {
   width: 92%;
@@ -150,9 +155,12 @@ header {
   color: rgb(116, 116, 116);
 }
 
+#details3 {
+  margin-left: 14px;
+}
+
 #bio {
   font-size: 0.7rem;
-  margin-left: 14px;
   margin-top: 8px;
 }
 
@@ -164,7 +172,6 @@ header {
   align-items: center;
   background-color: #2a2e31;
   border-radius: 12px;
-  margin: 0px auto;
 }
 
 #body {
@@ -216,7 +223,7 @@ header {
   position: fixed;
   right: 0px;
   top: 0px;
-  width: 280px;
+  width: 75%;
   height: 100%;
   background-color: rgb(15 17 18);
   display: none;
@@ -227,7 +234,7 @@ header {
 #exit {
   height: 100vh;
   position: absolute;
-  width: 40px;
+  width: 25%;
   left: 0px;
   top: 0px;
 }
@@ -271,7 +278,6 @@ a {
   border-radius: 8px;
 }
 
-
 #postDesc {
   height: 40vh;
   width: 92%;
@@ -285,7 +291,7 @@ a {
 sign up page
 */
 
-#sback{
+#sback {
   position: absolute;
   top: 16px;
   left: 10px;
@@ -293,13 +299,13 @@ sign up page
   width: 20px;
 }
 
-#sback a img{
+#sback a img {
   height: 100%;
   width: 100%;
   filter: invert(100%);
 }
 
-#signupBody{
+#signupBody {
   height: 100%;
   width: 100%;
   display: flex;
@@ -308,29 +314,29 @@ sign up page
   align-items: center;
 }
 
-#point1{
+#point1 {
   font-size: 28px;
   text-align: center;
 }
 
-#point2{
+#point2 {
   margin: 40px;
 }
 
-#inputPass{
+#inputPass {
   display: flex;
 }
 
-td{
+td {
   padding: 10px 5px;
 }
 
-.inp{
+.inp {
   border-bottom: 1px solid rgb(78, 78, 78);
   position: relative;
 }
 
-.inp input{
+.inp input {
   border: none;
   background-color: rgb(15 17 18);
   padding-left: 10px;
@@ -338,7 +344,7 @@ td{
   color: white;
 }
 
-.placeholder{
+.placeholder {
   position: absolute;
   bottom: 2px;
   left: 10px;
@@ -347,12 +353,11 @@ td{
   transition: 0.3s linear;
 }
 
-.inp input:focus{
+.inp input:focus {
   outline: none;
 }
 
-
-#showPassword{
+#showPassword {
   height: 20px;
   width: 20px;
   background-color: rgb(15 17 18);
@@ -361,23 +366,24 @@ td{
   border: none;
 }
 
-#showPassword img{
+#showPassword img {
   filter: invert(100%);
   height: 100%;
   width: 100%;
 }
 
-#point3{
+#point3 {
   font-size: 12px;
   color: #999999;
 }
 
-#point3 a{
+#point3 a {
   color: #2563eb;
   text-decoration: underline;
 }
 
-#point4, #goIn{
+#point4,
+#goIn {
   height: 32px;
   width: 180px;
   border: none;
@@ -394,16 +400,16 @@ td{
 log in page
 */
 
-#page{
+#page {
   height: 100%;
   width: 100%;
   background-color: #b0b0b0;
   display: flex;
   flex-direction: column;
-  justify-content:end ;
+  justify-content: end;
 }
 
-#lower{
+#lower {
   height: 60%;
   width: 100%;
   background-color: rgb(15 17 18);
@@ -414,9 +420,276 @@ log in page
   flex-direction: column;
 }
 
-#text{
+#text {
   font-size: 1.75rem;
   width: 265px;
+}
+
+/*
+another profile page
+*/
+
+#newButtons{
+  width: 92%;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+}
+
+#newButtons div{
+  height: 100%;
+  width: 48%;
+  background-color: #2a2e31;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*
+feed page
+*/
+
+#search{
+  width: 92%;
+  height: 60px;
+  background-color: #2a2e31;
+  margin: 0px auto;
+  border-radius: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#searchBox{
+  height: 40px;
+  width: 79%;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: black;
+  margin: auto ;
+  border-radius: 16px;
+}
+
+#search_input{
+  width: 100%;
+  background-color: black;
+  border: none;
+  color: white;
+}
+
+#search_input:focus{
+  outline: none;
+}
+
+#bottomNav a span{
+  display: none;
+}
+
+#bottomNav div:hover{
+  background-color: #464646;
+}
+
+#sideNav .det div:hover, .det a:hover{
+  background-color: #464646;
+  width: 200px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  border-radius: 8px;
+}
+
+
+#search_box{
+  height: 100px;
+  width: 92%;
+  background-color: #2a2e31 ;
+  margin: 0px auto;
+  margin-top: 20px;
+  border-radius: 16px;
+  display: none;
+}
+
+#searchAcc{
+  height: 100%;
+  width: 100%;
+  background-color: #2a2e31 ;
+  border-radius: 16px;
+}
+
+#feed{
+
+  width: 92%;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.misc{
+  width: 32%;
+  height: 115px;
+  background-color: #a3a3a3;
+  opacity: 10%;
+  margin: 2px;
+}
+
+#nope{
+  height: 100vh;
+  width: 67%;
+  position: absolute;
+  top: 220px;
+}
+
+
+@media only screen and (min-width: 400px) {
+  body {
+    margin: 0px auto;
+    width: 400px;
+  }
+
+  #bottomNav {
+    width: 340px;
+    bottom: 0px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  #u_profile {
+    height: 275px;
+    justify-content: space-between;
+  }
+
+  #details1 {
+    margin-top: 12px;
+  }
+
+  #details1 :nth-child(2),
+  #details1 :nth-child(3),
+  #details1 :nth-child(4) {
+    height: 50px;
+    width: 80px;
+    font-size: 0.75rem;
+  }
+
+  #profile_pic {
+    height: 80px;
+    width: 80px;
+  }
+
+  #details2 {
+    margin-left: 18px;
+    padding: 0px;
+  }
+
+  #name {
+    font-size: 1rem;
+  }
+
+  #profession {
+    font-size: 0.9rem;
+  }
+
+  #details3 {
+    margin-bottom: 25px;
+    margin-left: 18px;
+  }
+
+  #bio {
+    font-size: 0.85rem;
+    margin: 8px 0px;
+  }
+}
+
+@media only screen and (min-width: 651px) {
+  #box{
+    border-left: 1px solid rgb(65, 65, 65);
+    border-right: 1px solid rgb(65, 65, 65);
+    width: 100%;
+    min-height: 100vh;
+  }
+  #sideNav {
+    position: fixed;
+    display: flex;
+    top: 0px;
+    right: 0px;
+    width: 30%;
+  }
+
+}
+
+@media only screen and (min-width: 800px){
+
+  #bottomNav{
+    position: fixed;
+    top: 0px;
+    left: 0%;
+    right: 20px;
+    height: 80%;
+    padding-bottom: 20%;
+    transform: translate(0%, 0%);
+    flex-direction: column;
+    box-shadow: none;
+    width: 200px;
+    border-radius: 0px;
+  }
+
+  #jjj{
+    width: 200px;
+  }
+
+  .icon{
+    height: 44px;
+    width: 200px;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+    border-radius: 8px;
+  }
+
+  #bottomNav a{
+    height: 76%;
+    width: 100%;
+    display: flex;
+  }
+
+  #bottomNav a img{
+    height: 95%;
+    width: 30px;
+    margin-right: 20px;
+  }
+
+  #bottomNav a span{
+    font-size: 1.25rem;
+    display: block;
+  }
+
+  #exit{
+    width: 0%;
+  }
+}
+
+@media only screen and (min-width: 900px){
+  #bottomNav{
+    width: 260px;
+  }
+}
+
+@media only screen and (min-width: 1000px){
+  #bottomNav{
+    width: 300px;
+  }
+}
+
+@media only screen and (min-width: 1200px){
+  #box{
+    width: 500px;
+    margin-left:-100px;
+  }
 }
 
 @keyframes sidebar {

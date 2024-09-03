@@ -1,0 +1,15 @@
+body{
+  display: flex;
+  justify-content: center;
+}
+
+#country_box{
+  height: 100px;
+  overflow-y: scroll;
+  display: none;
+}
+
+#add{
+  display: flex;
+  flex-direction: column;
+}

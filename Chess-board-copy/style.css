@@ -1,0 +1,43 @@
+#heading{
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+.border{
+    background-color: black;
+    color: aliceblue;
+    text-align: right;
+}
+
+#board{
+    display: flex;
+    height: 640px;
+    width: 640px;
+    background-color: darkgrey;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+    font-size: 60px;
+}
+
+.white{
+    height: 64px;
+    width: 64px;
+    background-color:beige;
+}
+
+.black{
+  height: 64px;
+  width: 64px;
+  background-color: rgb(91, 156, 91);
+}
+
+.corner{
+    border: 10px;
+    border-color: aliceblue;
+    height: 44px;
+    width: 44px;
+}

@@ -1,0 +1,68 @@
+body{
+    background-color: #68d8d6;
+}
+
+#BODY{
+    margin: auto;
+    background-color:aqua ;
+    height: 570px;
+    border-radius: 5%;
+    border: 5px solid black;
+    width: 400px;
+    position: relative;
+}
+
+#heading{
+  margin: 10px 0px 10px 80px;
+}
+
+svg{
+height: 45px;
+width: 45px;
+}
+
+input{
+  border: 2px solid black;
+}
+
+table, button{
+    margin: 10px;
+}
+
+#contact-circle{
+  padding: 4px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #68d8d6;
+  position: absolute;
+  position: fixed;
+  bottom: 120px;
+  z-index: 10;
+}
+
+#gallery-circle{
+  padding: 4px;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: #68d8d6;
+  position: absolute;
+  position: fixed;
+  bottom: 120px;
+  left: 580px;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 600px){
+  #gallery-circle{
+    top: 510px;
+    left: 30px;
+  }
+
+  #contact-circle{
+    top: 510px;
+    left: 100px;
+  }
+
+}

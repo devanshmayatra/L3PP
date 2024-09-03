@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style3.css">
+
+  <title>Bank App</title>
+</head>
+<body>
+  <div id="page_1">
+    <div id="login_box">
+      <div id="login_box_title">Login</div>
+      <div id="inputs">
+        <input class="" id="uname" type="text" placeholder="Enter UserName">
+        <input class="" id="pass" type="password" placeholder="Enter Password">
+        <button id="enter">SUBMIT</button>
+      </div>
+    </div>
+  </div>
+  <div id="page_2">
+    <div id="header">
+      <div>
+        WELCOME TO JANTA BANK
+      </div>
+      <button class="log_out">LOG OUT</button>
+    </div>
+    <div id="home_cont">
+      <div id="upi_entry"> UPI </div>
+      <div id="credit_entry"> CREDIT CARD</div>
+    </div>
+    <div id="transactions">SHOW TRANSACTIONS</div>
+  </div>
+  <div id="box">
+    <div id="page_3">
+      <div class="nav_bar">
+        <button class="back">BACK</button>
+        <button class="log_out">LOG OUT</button>
+      </div>
+      <div class="header_1">
+        <div class="name">UPI</div>
+      </div>
+      <div id="container_3">
+        <div id="rs"> Rs. <span id="amount"> 0 </span></div>
+        <div id="actions_1">
+          <div class="cont" id="upi_add">
+            <input type="number" placeholder="Enter amount" id="add_money">
+            <button id="add">ADD</button>
+            <div class="alert">Please enter amount</div>
+          </div>
+          <div class="cont" id="upi_wthdrw">
+            <input type="number" id="withdraw_money" placeholder="Enter amount">
+            <button id="withdraw">WITHDRAW</button>
+            <div class="alert">Please enter amount</div>
+            <div class="alert_1">You don't have any balance</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page_4">
+      <div class="nav_bar">
+        <button class="back">BACK</button>
+        <button class="log_out">LOG OUT</button>
+      </div>
+      <div class="header_1">
+        <div class="name">CREDIT CARD</div>
+      </div >
+      <div id="container_4">
+        <div id="paisa">
+          <div id="avail"> Rs. <span id="amount2"> 100000 </span></div>
+          <div id="util"> Rs. <span id="amount3"> 0 </span></div>
+        </div>
+        <div id="actions_2">
+          <div class="cont" id="bill_pay">
+            <input type="number" placeholder="Enter amount" id="pay_bill">
+            <button id="pay">PAY BILL</button>
+            <div class="alert">Please enter amount</div>
+            <div class="alert_1">Do you have more money than you need ?</div>
+          </div>
+          <div class="cont" id="something_to_buy">
+            <input type="number" placeholder="Enter amount" id="buy_something">
+            <button id="buy">BUY</button>
+            <div class="alert">Please enter amount</div>
+            <div class="alert_1">You dont have enough balance !</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="page_5">
+      <div class="nav_bar">
+        <button class="back">BACK</button>
+        <button class="log_out">LOG OUT</button>
+      </div>
+      <div class="header_1">
+        <div class="name">TRANSACTIONS</div>
+      </div>
+      <div id="container_5">
+      </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

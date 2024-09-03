@@ -1,0 +1,114 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'kanit';
+}
+
+#container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+table{
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+th,td{
+  border: 1px solid black;
+  width: 120px;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+}
+
+
+#game{
+  margin-top: 30px;
+  height: 277px;
+  width: 280px;
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+#No1{
+  height: 80px;
+  width: 80px;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+}
+
+#No2{
+  height: 80px;
+  width: 80px;
+  border-right: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+}
+
+#No3{
+  height: 80px;
+  width: 80px;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+}
+
+#No4{
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-right: 10px solid black;
+}
+
+#No5{
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+  border-right: 10px solid black;
+}
+
+#No6{
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-left: 10px solid black;
+}
+
+#No7{
+  height: 80px;
+  width: 80px;
+  border-right: 10px solid black;
+  border-top: 10px solid black;
+}
+
+#No8{
+  height: 80px;
+  width: 80px;
+  border-right: 10px solid black;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+}
+
+#No9{
+  height: 80px;
+  width: 80px;
+  border-top: 10px solid black;
+  border-left: 10px solid black;
+}
+
+.boxes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+}

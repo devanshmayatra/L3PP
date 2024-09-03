@@ -1,0 +1,20 @@
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+#scroll{
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.new{
+  height: 200px;
+  width: 300px;
+  background-color: beige;
+  border-radius: 20px;
+  margin-top: 10px;
+}

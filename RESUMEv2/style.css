@@ -1,0 +1,36 @@
+#BODY{
+    font-family: helvetica, Georgia, 'Times New Roman', serif;
+    border:3px solid #000;
+    border-radius: 17px;
+    padding: 5px;
+    background-color: #dee2e6;
+}
+
+#header{
+  border:3px solid black;
+  border-radius: 13px;
+  margin-bottom: 5px;
+}
+
+.icons{
+  border:3px solid black;
+  border-radius: 10px;
+  background-color: #adb5bd ;
+}
+
+#self{
+  height: 250px;
+  width: 75%;
+}
+
+.section1{
+    background-color: #adb5bd;
+    border-radius: 12px;
+}
+
+button{
+  background-color:#adb5bd ;
+  border-radius: 8px;
+  border: none;
+  width: 100%;
+}

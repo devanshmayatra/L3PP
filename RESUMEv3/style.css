@@ -1,0 +1,112 @@
+body{
+    font-family:Arial,Georgia, Times, 'Times New Roman', serif;
+    background-image: url(https://images.unsplash.com/photo-1526646753575-47541447d3cb?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTUwfHxwbGFudCUyMHdhbGxwYXBlcnxlbnwwfHwwfHx8MA%3D%3D);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    background-color: #f1f1f1;
+    width: 820px;
+}
+#navbar{
+    height: 30px;
+    background-color: #414141;
+}
+
+button{
+    width: 48%;
+    margin: 5px;
+    background-color: #f1f1f1;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+#personal-details{
+    height:300px;
+    background-color: #f1f1f1;
+}
+
+#personaldetails{
+    display:flex;
+}
+
+#image{
+    height: 190px;
+    width: 200px;
+    border-radius: 50%;
+    margin-left: 50px;
+}
+
+#Name{
+    margin: 10px 90px 10px 40px;
+    font-size: 35px;
+}
+
+#designation{
+    margin: 10px 90px 10px 40px;
+    font-size: 15px;
+}
+
+h3{
+    margin-left:50px;
+    margin-bottom: 0px ;
+}
+
+#academic-details{
+    background-color: #f1f1f1;
+}
+
+#education{
+    display: flex;
+}
+
+.edu{
+    margin-left: 50px;
+    border-right: 2px solid black;
+    padding-right: 42px;
+}
+
+.heading{
+    margin: 0px 0px 30px 20px;
+}
+
+#profile h2{
+    margin-top: 30px;
+}
+
+#profile,#expertise,#projects{
+    height: 275px;
+    background-color: #dadbdd;
+}
+#profile-data{
+    margin: 30px 30px;
+}
+
+.skill{
+    margin: 10px 30px;
+}
+
+#experience{
+    background-color: #f1f1f1;
+}
+
+.company-details{
+    margin-left: 30px;
+}
+
+.c-position{
+    margin: 30px 0px 0px 0px;
+}
+
+.c-name{
+    margin: 0px ;
+}
+
+.company-details p{
+    margin-right: 30px;
+}
+
+hr{
+    margin: 0px;
+}

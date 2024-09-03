@@ -1,0 +1,175 @@
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+width: 400px;
+height: 40px;
+border-radius: 10px;
+background-color: red;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 50px;
+}
+
+.link{
+background-color: aliceblue;
+color: black;
+text-decoration: none;
+margin: 10px;
+padding: 0px 7px;
+border-radius: 5px;
+height: 24px;
+display: flex;
+align-items: center;
+}
+
+.card{
+  height: 380px;
+  width: 1358px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1{
+  margin-bottom: 0px;
+}
+
+.text{
+  width: 1280px;
+  height: 84px;
+  text-align: center;
+  margin: 64px 39px 20px 39px;
+}
+
+.data{
+  width: 896px;
+  height: 128px;
+  margin: 20px 231px 64px 231px;
+  display: flex;
+  box-shadow: 0px 2px 5px black;
+}
+
+.data div{
+  width: 298.67px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.num{
+  font-size: 60px;
+  color:#4F46E5;
+  font-weight: bold;
+}
+
+.card-stats{
+  height: 152px;
+  width: 1216px;
+  background-color: #F2EDED;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.text-1{
+  height: 44px;
+  width: 100%;
+  font-size: 20px;
+  padding-left: 5px;
+}
+
+.data-1{
+  height: 108px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.boxes{
+  background-color: white;
+  height: 100%;
+  width: 392px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dat-1{
+  margin: 24px 24px 0px 24px;
+  columns: #6B7280;
+}
+
+.dat-2{
+  margin: 0px 24px 24px 24px;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+@media only screen and (max-width: 600px){
+
+  .card{
+    height: 692px;
+    width: 378px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text{
+    width: 344px;
+    margin: 48px 16px 40px 16px;
+  }
+
+  h1{
+    width: 344px;
+    margin: 0px;
+  }
+
+  p{
+    width: 344px;
+    margin: 0px;
+  }
+
+  .data{
+    width: 344px;
+    height: 388px;
+    flex-direction: column;
+  }
+
+  .data div{
+    height: 130px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .txt{
+    margin-top: 0px;
+  }
+
+  .card-stats{
+    height: 384px;
+    width: 344px;
+  }
+
+  .data-1{
+    flex-direction: column;
+  }
+
+  .boxes{
+    height: 100px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+
+}

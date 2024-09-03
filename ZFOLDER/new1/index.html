@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>new</title>
+  </head>
+  <body>
+    <div id="container">
+      <div class="card" id="d1"></div>
+      <div class="card" id="d2"></div>
+      <div class="card" id="d3"></div>
+      <div class="card" id="d4"></div>
+      <div class="card" id="d5"></div>
+    </div>
+
+    <div id="button">
+      <div id="btn1">AHEAD</div>
+      <div id="btn2">STOP</div>
+      <div id="btn3">BEHIND</div>
+    </div>
+
+    <div id="butt">
+      <div id="but1">HELLO</div>
+      <div id="but2"></div>
+    </div>
+
+    <script>
+      let ahead = document.querySelector("#btn1");
+      let behind = document.querySelector("#btn3");
+      let stop = document.querySelector("#btn2");
+      let cards = document.querySelectorAll(".card");
+      let count = 0;
+
+      ahead.addEventListener("click", () => {
+        if (count > 0) {
+          let prev = count - 1;
+          cards[prev].classList.remove("new");
+        }
+        if (count == 5) {
+          count = 0;
+        }
+
+        cards[count].classList.add("new");
+
+        count++;
+        console.log(count)
+      });
+
+      behind.addEventListener("click", () => {
+        count--;
+        if (count < 4) {
+          let next = count + 1;
+          cards[next].classList.remove("new");
+        }
+
+        if (count < 0) {
+          count = 4;
+        }
+
+        cards[count].classList.add("new");
+        console.log(count)
+      });
+
+      stop.addEventListener("click", () => {
+        count =0; 
+          cards.forEach(card => {
+            card.classList.remove("new");
+            });
+        })
+    </script>
+  </body>
+</html>
